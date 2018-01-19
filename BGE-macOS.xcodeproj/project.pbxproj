@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1A1BED5B1FBB3F1800BDBE8E /* TextRenderTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1A1BED5A1FBB3F1800BDBE8E /* TextRenderTest.cpp */; };
 		1A83444A1F9A242B00848613 /* MotionState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1A8343CF1F9A241C00848613 /* MotionState.cpp */; };
 		1A83444B1F9A242B00848613 /* Ground.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1A8343D21F9A241C00848613 /* Ground.cpp */; };
 		1A83444C1F9A242B00848613 /* FlockingScenario.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1A8343D41F9A241C00848613 /* FlockingScenario.cpp */; };
@@ -97,6 +98,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1A1BED591FBB3E9300BDBE8E /* TextRenderTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TextRenderTest.h; sourceTree = "<group>"; };
+		1A1BED5A1FBB3F1800BDBE8E /* TextRenderTest.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = TextRenderTest.cpp; sourceTree = "<group>"; };
 		1A8343C41F9A23DF00848613 /* BGE-macOS */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "BGE-macOS"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A8343CE1F9A241C00848613 /* ModelTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ModelTest.h; path = "../../BGEMacPort-master/BGE1/ModelTest.h"; sourceTree = "<group>"; };
 		1A8343CF1F9A241C00848613 /* MotionState.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = MotionState.cpp; path = "../../BGEMacPort-master/BGE1/MotionState.cpp"; sourceTree = "<group>"; };
@@ -334,6 +337,8 @@
 				1A8343E31F9A241D00848613 /* KinematicMotionState.h */,
 				1A8343F41F9A242000848613 /* Lab3.cpp */,
 				1A8344141F9A242400848613 /* Lab3.h */,
+				1A1BED591FBB3E9300BDBE8E /* TextRenderTest.h */,
+				1A1BED5A1FBB3F1800BDBE8E /* TextRenderTest.cpp */,
 				1A8344111F9A242400848613 /* Lab4.cpp */,
 				1A83440A1F9A242300848613 /* Lab4.h */,
 				1A8344271F9A242600848613 /* Lab5.cpp */,
@@ -529,6 +534,7 @@
 				1A83444C1F9A242B00848613 /* FlockingScenario.cpp in Sources */,
 				1A8344741F9A242B00848613 /* Lab5.cpp in Sources */,
 				1A8344651F9A242B00848613 /* Route.cpp in Sources */,
+				1A1BED5B1FBB3F1800BDBE8E /* TextRenderTest.cpp in Sources */,
 				1A8344761F9A242B00848613 /* Sphere.cpp in Sources */,
 				1A8344521F9A242B00848613 /* Buddha.cpp in Sources */,
 				1A8344591F9A242B00848613 /* SteeringGame.cpp in Sources */,
