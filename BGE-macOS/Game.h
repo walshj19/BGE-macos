@@ -8,14 +8,14 @@
  #include "RiftController.h"
 #endif 
 #include <GL/glew.h>
-#include <GL/gl.h>
-#include <GL/glu.h>
+#include <OpenGL/gl3.h>
+#include <OpenGL/glu.h>
 #include<glm.hpp>
 #include <gtc/matrix_transform.hpp>
 #include<vector>
 #include<sstream>
-#include <SDL_ttf.h>
-#include <SDL.h>
+#include <SDL2_ttf/SDL_ttf.h>
+#include <SDL2/SDL.h>
 #include "Camera.h"
 #include "Ground.h"
 #include "SoundSystem.h"
@@ -58,6 +58,7 @@ namespace BGE
 		glm::vec2 lastPrintPosition;
 		float fontSize;
 		void Print(string message, glm::vec2);
+        void SimplePrint(string message, glm::vec2);
 
 		btBroadphaseInterface* broadphase;
 
@@ -76,7 +77,7 @@ namespace BGE
 		
 		bool PreInitialise();
 		bool Initialise();
-		void Update(float timeDelta);
+		void Update();
 		void PreDraw();
 		void Draw();
 		void PostDraw();
@@ -86,7 +87,7 @@ namespace BGE
 		void SetGround(shared_ptr<Ground> ground);
 		const Uint8 * GetKeyState();
 		SDL_Window * GetMainWindow();
-		bool Run();
+		virtual bool Run();
 		
 		void PrintText(string message, glm::vec2 position);
 		void PrintText(string message);
@@ -94,6 +95,7 @@ namespace BGE
 		void PrintFloat(string message, float f);
 		void PrintQuat(string message, glm::quat q);
 		void PrintAll();
+		void setGravity(glm::vec3 gravity);
 
 		static shared_ptr<Game> Instance();
 		shared_ptr<Camera> camera;
@@ -101,6 +103,7 @@ namespace BGE
 
 		SDL_Window * window; /* Our window handle */
 		SDL_GLContext context; /* Our opengl context handle */
+        SDL_Renderer * renderer;
 
 		// Physics stuff
 		std::shared_ptr<PhysicsFactory> physicsFactory;
