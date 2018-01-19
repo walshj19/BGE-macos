@@ -21,13 +21,15 @@ namespace BGE
 		std::vector<glm::vec2> texels;
 		std::vector<glm::vec3> normals;
 
-		bool Ground::rayIntersectsWorldPlane(glm::vec3 origin, glm::vec3 look, glm::vec3 & point);
+		bool rayIntersectsWorldPlane(glm::vec3 origin, glm::vec3 look, glm::vec3 & point);
 		float width, height;
 
 	private:
 		GLuint vertexbuffer;
 		GLuint texelbuffer;
 		GLuint programID;
+        //NEW
+        GLuint uvbuffer;
 		
 		GLuint normalbuffer;
 		GLuint colourbuffer;
