@@ -376,7 +376,7 @@ void Game::Print(string message, glm::vec2 position)
     SDL_FreeSurface(surface);
 }
 
-// NEW
+// Added by James Walsh
 void Game::SimplePrint(string message, glm::vec2 position)
 {
     SDL_Color TextColor = { 100, 100, 100 };
@@ -405,6 +405,7 @@ void Game::SimplePrint(string message, glm::vec2 position)
     
     SDL_DestroyRenderer(renderer);
 }
+// End of addition
 
 void Game::DeletePhysicsConstraints()
 {
@@ -465,7 +466,7 @@ bool BGE::Game::PreInitialise()
     
 //    SDL_GL_SetAttribute( SDL_GL_CONTEXT_MAJOR_VERSION, 4 );
 //    SDL_GL_SetAttribute( SDL_GL_CONTEXT_MINOR_VERSION, 1 );
-    SDL_GL_SetAttribute( SDL_GL_CONTEXT_PROFILE_MASK, SDL_GL_CONTEXT_PROFILE_CORE );
+    SDL_GL_SetAttribute( SDL_GL_CONTEXT_PROFILE_MASK, SDL_GL_CONTEXT_PROFILE_CORE );	// Edited by James Walsh
     
 	SDL_GL_SetAttribute(SDL_GL_DOUBLEBUFFER, 1);
 	SDL_GL_SetAttribute(SDL_GL_DEPTH_SIZE, 24);

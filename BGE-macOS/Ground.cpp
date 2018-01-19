@@ -104,7 +104,7 @@ Ground::~Ground(void)
 //    return true;
 //}
 
-
+// Added by James Walsh
 //Made with reference to http://www.opengl-tutorial.org tutorials
 bool Ground::Initialise()
 {
@@ -156,6 +156,7 @@ bool Ground::Initialise()
 
     return true;
 }
+// End of Addition
 
 //void Ground::Draw()
 //{
@@ -224,6 +225,7 @@ bool Ground::Initialise()
 //    GameComponent::Draw();
 //}
 
+// Added by James Walsh
 void Ground::Draw()
 {
     glUseProgram(programID);
@@ -265,6 +267,7 @@ void Ground::Draw()
     
     GameComponent::Draw();
 }
+// End of addition
                  
 void Ground::Cleanup()
 {

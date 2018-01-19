@@ -17,8 +17,9 @@ namespace BGE
 		float jumpDuration;
 		float jumpTheta;
         
-        //NEW
+        //Added by James Walsh
         float mouseSensitivity;
+        //End
 		
         glm::vec3 gravity;
 		bool jumping;

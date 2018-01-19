@@ -13,8 +13,9 @@ FPSController::FPSController(void)
 
 bool FPSController::Initialise()
 {
-    //NEW
+    //Added by James Walsh
     mouseSensitivity = Params::GetFloat("mouseSensitivity");
+    //End
     
 	return GameComponent::Initialise();
 }
@@ -86,14 +87,13 @@ void FPSController::Update()
 	yaw = midX - x;
 	pitch = midY - y;
 
-//    float scale = 0.1f;
 	if (yaw != 0)
 	{
-		transform->Yaw(yaw * mouseSensitivity);
+		transform->Yaw(yaw * mouseSensitivity);	//Edited by James Walsh
 	}
 	if (pitch != 0)
 	{
-		transform->Pitch(pitch * mouseSensitivity);
+		transform->Pitch(pitch * mouseSensitivity);	//Edited by James Walsh
 	}
 	SDL_WarpMouseInWindow(
 		NULL
